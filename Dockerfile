@@ -14,6 +14,5 @@ RUN chmod u+x install.sh && ./install.sh
 RUN rm install.sh
 
 ENV PATH="/usr/local/texlive/2018/bin/x86_64-linux:$PATH"
-RUN tlmgr install algorithms
 
 RUN rm -rf /var/lib/apt/lists/*
